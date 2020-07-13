@@ -2,6 +2,7 @@ package com.monev.online.shop.model;
 
 import javax.persistence.*;
 import java.util.List;
+
 @Entity
 @Table(name = "customer")
 public class Customer {
@@ -14,7 +15,10 @@ public class Customer {
     private String lastName;
     @Column(name = "email")
     private String email;
-    //private Address address;
+
+//    @OneToMany(fetch = FetchType.LAZY, mappedBy = "customer")
+//    @JoinColumn(name = "address")
+//    private Address address;
 
     public Long getId() {
         return id;
@@ -23,7 +27,7 @@ public class Customer {
     public String getFirstName() {
         return firstName;
     }
-@Column(name = "fir")
+
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }

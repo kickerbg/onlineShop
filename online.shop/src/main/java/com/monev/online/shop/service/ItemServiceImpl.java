@@ -11,6 +11,7 @@ public class ItemServiceImpl implements ItemService {
 
     @Autowired
     public ItemServiceImpl(ItemRepository itemRepository) {
+
         this.itemRepository = itemRepository;
     }
 
