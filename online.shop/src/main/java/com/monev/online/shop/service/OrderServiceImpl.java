@@ -14,6 +14,7 @@ public class OrderServiceImpl implements OrderService {
         this.orderRepository = orderRepository;
     }
 
+
     @Override
     public void createOrder(Order order) {
         orderRepository.save(order);
@@ -22,7 +23,6 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public void updateOrder(Order order) {
         orderRepository.save(order);
-
     }
 
     @Override
